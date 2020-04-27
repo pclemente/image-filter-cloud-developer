@@ -34,4 +34,6 @@ Follow the process described in the course to `eb init` a new application and `e
 ### Deployment
 
 The system can be accessed via the following URL http://imagefilterpclemente-env.eba-n2jvdqyr.us-west-1.elasticbeanstalk.com/
-The Postman collection given used an image that didn't exist. I've updated it to ensure it works well
+The Postman collection given used an image that didn't exist. I've updated it to ensure it works well.
+An example URL would be
+http://imagefilterpclemente-env.eba-n2jvdqyr.us-west-1.elasticbeanstalk.com/filteredimage?image_url=https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/batman-dc-1568105013.jpg
