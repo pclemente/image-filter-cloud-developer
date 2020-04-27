@@ -15,7 +15,8 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
   // GET /filteredimage?image_url={{URL}}
   // endpoint to filter an image from a public url.
-  app.get("/filteredimage/", async ( req: Request, res: Response ) => {
+
+  app.get("/filteredimage/", async ( req, res ) => {
     let {image_url} = req.query;
 
     if (!image_url){
@@ -27,11 +28,10 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
       return res.status(200).sendFile(img, () =>{
         deleteLocalFiles([img])
       });
-
     }catch(err){
       return res.status(400).send('Invalid request');
     }
-  });
+  } );
 
   // Root Endpoint
   // Displays a simple message to the user
